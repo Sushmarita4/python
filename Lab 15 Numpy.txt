@@ -1,0 +1,50 @@
+ 1. Convert the below list into numpy array then display the array
+
+Input: my_list = [1, 2, 3, 4, 5]
+
+
+CODE: 
+#import numpy as np
+
+my_list = [1, 2, 3, 4, 5]
+my_array = np.array(my_list)
+
+print(my_array)
+
+
+OUTPUT:
+[1 2 3 4 5]
+------------------------------------------------------------------------------------------------------------------------------------
+
+2. Convert the below list into a numpy array then display the array then display the first and last index and then multiply each element by 2 and display the result.
+
+Input: my_list = [1, 2, 3, 4, 5]
+
+CODE:
+import numpy as np
+
+# Convert the list to a NumPy array
+my_list = [1, 2, 3, 4, 5]
+my_array = np.array(my_list)
+
+# Display the array
+print("Array:", my_array)
+
+# Display the first and last index
+first_element = my_array[0]
+last_element = my_array[-1]
+print("First element:", first_element)
+print("Last element:", last_element)
+
+# Multiply each element by 2
+multiplied_array = my_array * 2
+print("Multiplied array:", multiplied_array)
+
+OUTPUT : 
+
+Array: [1 2 3 4 5]
+First element: 1
+Last element: 5
+Multiplied array: [ 2  4  6  8 10]
+------------------------------------------------------------------------------------------------------------------------------------
+
