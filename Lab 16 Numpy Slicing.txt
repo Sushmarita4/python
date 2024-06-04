@@ -1,0 +1,104 @@
+ 1. . Write a NumPy program to create an array of 10 zeros, 10 ones, and 10 fives
+
+
+CODE: 
+import numpy as np
+
+# Create an array of 10 zeros
+array_zeros = np.zeros(10)
+
+# Create an array of 10 ones
+array_ones = np.ones(10)
+
+# Create an array of 10 fives
+array_fives = np.full(10, 5)
+
+# Print the arrays
+print("Array of 10 zeros:", array_zeros)
+print("Array of 10 ones:", array_ones)
+print("Array of 10 fives:", array_fives)
+
+OUTPUT:
+Array of 10 zeros: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Array of 10 ones: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+Array of 10 fives: [5 5 5 5 5 5 5 5 5 5]
+------------------------------------------------------------------------------------------------------------------------------------
+
+2. Write a NumPy program to create a 3x3 matrix with values ranging from 2 to 10.
+
+CODE:
+import numpy as np
+
+# Create an array with values ranging from 2 to 10
+array_values = np.arange(2, 11)
+
+# Reshape the array into a 3x3 matrix
+matrix_3x3 = array_values.reshape(3, 3)
+
+# Print the 3x3 matrix
+print("3x3 matrix with values ranging from 2 to 10:")
+print(matrix_3x3)
+
+OUTPUT : 
+
+3x3 matrix with values ranging from 2 to 10:
+[[ 2  3  4]
+ [ 5  6  7]
+ [ 8  9 10]]
+------------------------------------------------------------------------------------------------------------------------------------
+
+3. Write a NumPy program to create an array with values ranging from 12 to 38.
+
+CODE:
+import numpy as np
+
+# Create an array with values ranging from 12 to 38
+array_values = np.arange(12, 39)
+
+# Print the array
+print("Array with values ranging from 12 to 38:")
+print(array_values)
+
+OUTPUT : 
+
+Array with values ranging from 12 to 38:
+[12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35
+ 36 37 38]
+------------------------------------------------------------------------------------------------------------------------------------
+
+4 Write a NumPy program to convert a list and tuple into arrays. Input: my_list = [1, 2, 3, 4, 5, 6, 7, 8] 
+
+Input: my_tuple = ([8, 4, 6], [1, 2, 3])
+
+CODE:
+import numpy as np
+
+# Input list
+my_list = [1, 2, 3, 4, 5, 6, 7, 8]
+
+# Input tuple
+my_tuple = ([8, 4, 6], [1, 2, 3])
+
+# Convert list to array
+array_from_list = np.array(my_list)
+
+# Convert tuple to array
+array_from_tuple = np.array(my_tuple)
+
+# Print the arrays
+print("Array from list:")
+print(array_from_list)
+
+print("\nArray from tuple:")
+print(array_from_tuple)
+
+OUTPUT : 
+
+Array from list:
+[1 2 3 4 5 6 7 8]
+
+Array from tuple:
+[[8 4 6]
+ [1 2 3]]
+------------------------------------------------------------------------------------------------------------------------------------
+

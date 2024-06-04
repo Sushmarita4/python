@@ -1,0 +1,56 @@
+ 1. Suppose you have a dataset containing daily temperature readings for a city, and you want to identify days with extreme temperature conditions. Find days where the temperature either exceeded 35 degrees Celsius (hot day) or dropped below 5 degrees Celsius (cold day). 
+
+Input:
+
+temperatures = np.array([32.5, 34.2, 36.8, 29.3, 31.0, 38.7, 23.1, 18.5, 22.8, 37.2,4,25,12,-4,-12])
+
+
+CODE: 
+import numpy as np
+
+# Input temperatures array
+temperatures = np.array([32.5, 34.2, 36.8, 29.3, 31.0, 38.7, 23.1, 18.5, 22.8, 37.2, 4, 25, 12, -4, -12])
+
+# Identify hot days (temperature > 35 degrees Celsius)
+hot_days = np.where(temperatures > 35)[0]
+
+# Identify cold days (temperature < 5 degrees Celsius)
+cold_days = np.where(temperatures < 5)[0]
+
+# Print the results
+print("Hot days (temperature > 35 degrees Celsius) indices:", hot_days)
+print("Cold days (temperature < 5 degrees Celsius) indices:", cold_days)
+
+OUTPUT:
+Hot days (temperature > 35 degrees Celsius) indices: [2 5 9]
+Cold days (temperature < 5 degrees Celsius) indices: [10 13 14]
+------------------------------------------------------------------------------------------------------------------------------------
+
+2.  Suppose you have a dataset containing monthly sales data for a company, and you want to split this data into quarterly reports for analysis and reporting purposes. 
+
+Input: monthly_sales = np.array([120, 135, 148, 165, 180, 155, 168, 190, 205, 198, 210, 225])
+
+
+
+CODE:
+import numpy as np
+
+# Input monthly sales array
+monthly_sales = np.array([120, 135, 148, 165, 180, 155, 168, 190, 205, 198, 210, 225])
+
+# Reshape the array into a 4x3 matrix (4 quarters, each with 3 months)
+quarterly_sales = monthly_sales.reshape(4, 3)
+
+# Print the quarterly sales reports
+print("Quarterly sales reports:")
+print(quarterly_sales)
+
+OUTPUT : 
+
+Quarterly sales reports:
+[[120 135 148]
+ [165 180 155]
+ [168 190 205]
+ [198 210 225]]
+------------------------------------------------------------------------------------------------------------------------------------
+
