@@ -1,0 +1,74 @@
+1. Declare a div() function with two parameters. Then call the function and pass two numbers and display their division. 
+
+def div(num1, num2):
+    if num2 == 0:
+        return "Division by zero is not allowed"
+    else:
+        return num1 / num2
+
+# Example usage:
+numerator = 10
+denominator = 2
+result = div(numerator, denominator)
+print("Result of division:", result)
+
+OUTPUT  : 
+
+Result of division: 5.0
+------------------------------------------------------------------------------------------------------------------------------------
+
+2. Declare a square() function with one parameter. Then call the function and pass one number and display the square of that number .
+
+def square(num):
+    return num ** 2
+
+# Example usage:
+number = 5
+result = square(number)
+print("Square of", number, "is:", result)
+
+OUTPUT : 
+
+Square of 5 is: 25
+------------------------------------------------------------------------------------------------------------------------------------
+
+3. Using max() and min() functions display the maximum and minimum of 5 random numbers.
+
+import random
+
+# Generate 5 random numbers
+random_numbers = [random.randint(1, 100) for _ in range(5)]
+
+# Display the list of random numbers
+print("Random Numbers:", random_numbers)
+
+# Calculate and display the maximum and minimum of the random numbers
+maximum = max(random_numbers)
+minimum = min(random_numbers)
+
+print("Maximum Number:", maximum)
+print("Minimum Number:", minimum)
+
+OUTPUT : 
+
+Random Numbers: [64, 95, 85, 18, 83]
+Maximum Number: 95
+Minimum Number: 18
+------------------------------------------------------------------------------------------------------------------------------------
+
+4. Accept a name from the user and display that in lower case using lower() function
+
+# Accept a name from the user
+name = input("Enter your name: ")
+
+# Convert the name to lowercase using the lower() function
+lowercase_name = name.lower()
+
+# Display the name in lowercase
+print("Name in lowercase:", lowercase_name)
+
+OUTPUT : 
+
+Enter your name: Sushma.N
+Name in lowercase: sushma.n
+-------------------------------------------------------------------------------------------------------------------------------------

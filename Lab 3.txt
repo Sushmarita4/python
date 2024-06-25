@@ -1,0 +1,127 @@
+1. Write a Python program that takes a number as input and prints "Even" if the number is even and "Odd" if it's odd.
+
+
+def check(num):
+    if num % 2 == 0:
+        print(num,"is Even number")
+    else:
+        print(num,"is Odd number")
+
+# Taking input from the user
+number = int(input("Enter a number: "))
+
+# Checking if the number is even or odd
+check(number)
+OUTPUT  : 
+
+Enter a number: 6
+6 is Even number
+------------------------------------------------------------------------------------------------------------------------------------
+
+2. Create a Python program that checks whether a person is eligible to vote (18 years or older) based on their age.
+
+def vote(age):
+    if age >= 18:
+        print("You are eligible to vote.")
+    else:
+        print("You are not eligible to vote yet.")
+
+# Taking input from the user
+age = int(input("Enter your age: "))
+
+# Checking voting eligibility
+vote(age)
+
+
+OUTPUT : 
+
+Enter your age: 25
+You are eligible to vote.
+------------------------------------------------------------------------------------------------------------------------------------
+
+3. Write a Python program that determines if a given year is a leap year or not.
+
+def is_leap_year(year):
+    # Leap year if divisible by 4
+    if year % 4 == 0:
+        # Except if it's divisible by 100
+        if year % 100 == 0:
+            # Except if it's also divisible by 400
+            if year % 400 == 0:
+                return True
+            else:
+                return False
+        else:
+            return True
+    else:
+        return False
+
+# Taking input from the user
+year = int(input("Enter a year: "))
+
+# Checking if the year is a leap year
+if is_leap_year(year):
+    print(year, "is a leap year.")
+else:
+    print(year, "is not a leap year.")
+
+OUTPUT : 
+
+Enter a year: 2024
+2024 is a leap year.
+------------------------------------------------------------------------------------------------------------------------------------
+
+4. Create a Python program that checks if a user-given number is positive, negative, or zero.
+
+def check_number(number):
+    if number > 0:
+        print("The number is positive.")
+    elif number < 0:
+        print("The number is negative.")
+    else:
+        print("The number is zero.")
+
+# Taking input from the user
+number = float(input("Enter a number: "))
+
+# Checking if the number is positive, negative, or zero
+check_number(number)
+
+OUTPUT : 
+
+Enter a number: 23
+The number is positive.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+5. Write a Python program that determines the largest of three numbers entered by the user.
+
+def find_largest(num1, num2, num3):
+    # Assuming num1 is the largest initially
+    largest = num1
+    
+    # Comparing with num2
+    if num2 > largest:
+        largest = num2
+    
+    # Comparing with num3
+    if num3 > largest:
+        largest = num3
+    
+    return largest
+
+# Taking input from the user
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
+
+# Finding the largest number
+largest_number = find_largest(num1, num2, num3)
+print("The largest number is:", largest_number)
+
+OUTPUT : 
+
+Enter the first number: 23
+Enter the second number: 10
+Enter the third number: 10
+The largest number is: 23.0
